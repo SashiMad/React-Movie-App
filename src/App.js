@@ -5,6 +5,7 @@ import "./App.css";
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [searchValue, setSearchValue] = useState(" ");
 
   const getMovieRequest = async () => {
     const url = "http://www.omdbapi.com/?s=star wars&apikey=2cef477e";
